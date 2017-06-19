@@ -1,18 +1,18 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  context: path.join(__dirname, 'src'),
+  entry: './index.js',
   output: {
-    filename: 'assets/js/bundle.js',
-    path: path.resolve(__dirname, 'public'),
-    publicPath: '/'
+    filename: 'src/assets/js/bundle.js',
+    path: path.join(__dirname, 'public'),
   },
   devtool: 'eval-source-map',
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        include: path.resolve(__dirname, 'src'),
+        include: path.join(__dirname, 'src'),
         loader: 'babel-loader',
         options: {
           presets: ['react', 'es2015']
@@ -29,9 +29,6 @@ module.exports = {
     ]
   },
   devServer: {
-    historyApiFallback: true,
-    hot: true,
-    inline: true,
     contentBase: path.join(__dirname, 'public'),
     publicPath: '/',
     port: 9090

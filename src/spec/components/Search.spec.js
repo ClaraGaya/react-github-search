@@ -5,7 +5,7 @@ import { describe, it } from 'mocha';
 import sinon from 'sinon';
 
 
-import Search from '../components/Search';
+import Search from '../../components/Search';
 
 describe('It must render', () => {
   it('renders without exploding', () => {

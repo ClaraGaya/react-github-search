@@ -2,7 +2,7 @@ import * as actions from '../actions/actions.repos';
 import * as types from '../actions/types';
 import {expect} from 'chai';
 
-xdescribe('actions.getReposByName', function () {
+describe('actions.getReposByName', function () {
     it('getReposRequest: returns the expected action', function () {
         const action = actions.getReposRequest();
         expect(action).to.eql({
@@ -25,7 +25,7 @@ xdescribe('actions.getReposByName', function () {
     });
 });
 
-xdescribe('actions.getRepo', function () {
+describe('actions.getRepo', function () {
     it('getRepoRequest: returns the expected action', function () {
         const action = actions.getRepoRequest();
         expect(action).to.eql({
@@ -48,7 +48,7 @@ xdescribe('actions.getRepo', function () {
     });
 });
 
-xdescribe('actions.getRepoCommits', function () {
+describe('actions.getRepoCommits', function () {
     it('getRepoCommitsRequest: returns the expected action', function () {
         const action = actions.getRepoCommitsRequest();
         expect(action).to.eql({
@@ -71,7 +71,7 @@ xdescribe('actions.getRepoCommits', function () {
     });
 });
 
-xdescribe('actions.getRepoBranches', function () {
+describe('actions.getRepoBranches', function () {
     it('getRepoBranchesRequest: returns the expected action', function () {
         const action = actions.getRepoBranchesRequest();
         expect(action).to.eql({

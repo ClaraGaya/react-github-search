@@ -10,7 +10,7 @@ import thunk from 'redux-thunk';
 import { describe, it } from 'mocha';
 import sinon from 'sinon';
 
-import  RepoPage  from '../components/RepoPage';
+import  RepoPage  from '../../components/RepoPage';
 
 
 const middlewares = [thunk];

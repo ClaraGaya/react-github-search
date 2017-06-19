@@ -3,8 +3,8 @@ import { shallow, mount } from 'enzyme';
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import App from '../components/App';
-import Results from '../components/Results';
+import App from '../../components/App';
+import Results from '../../components/Results';
 
 describe('<App />', () => {
   it('renders without exploding', () => {

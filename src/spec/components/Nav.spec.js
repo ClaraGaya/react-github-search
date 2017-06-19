@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import { expect } from 'chai';
 import { Link } from 'react-router';
 
-import Nav from '../components/Nav';
+import Nav from '../../components/Nav';
 
 describe('<Nav />', () => {
   it('renders without exploding', () => {

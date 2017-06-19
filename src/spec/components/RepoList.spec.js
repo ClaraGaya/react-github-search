@@ -9,8 +9,8 @@ import thunk from 'redux-thunk';
 
 import { describe, it } from 'mocha';
 
-import  RepoList  from '../components/RepoList';
-import  RepoCard  from '../components/RepoCard';
+import  RepoList  from '../../components/RepoList';
+import  RepoCard  from '../../components/RepoCard';
 
 
 const middlewares = [thunk];

@@ -10,3 +10,9 @@ You can use any frontend framework except jQuery, preferably with React
 ### Resources
 [GitHub API Docs] (https://developer.github.com/v3/)
 [Repository Search API] (https://developer.github.com/v3/search/#search-repositories)
+
+
+### To run this project
+```
+npm start
+```
