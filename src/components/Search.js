@@ -10,6 +10,7 @@ export default class Search extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this)
   }
+  componentDidMount() {}
   handleChange(e){
     this.setState({repoName: e.target.value});
   }
@@ -19,7 +20,7 @@ export default class Search extends Component {
   }
   render() {
   return (
-    <form className="form-inline" onSubmit={this.handleSubmit}>
+    <form className="form-inline" onSubmit={(e) => this.handleSubmit(e)}>
       <label><i className="fa fa-github" aria-hidden="true"></i></label>
       <input type="text" 
       className="form-control" 

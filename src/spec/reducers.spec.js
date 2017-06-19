@@ -3,7 +3,7 @@ import * as actions from '../actions/actions.repos';
 import { repoReducer } from '../reducers/repo';
 import { reposReducer } from '../reducers/repos';
 
-describe('Tests getReposByName',  () => {
+xdescribe('Tests getReposByName',  () => {
     const initialState = {
         byId: {},
         loading: false,
@@ -34,7 +34,7 @@ describe('Tests getReposByName',  () => {
     });
 });
 
-describe('Tests getRepo',  () => {
+xdescribe('Tests getRepo',  () => {
     const initialState = {
         repo: {
             data:{},

@@ -8,7 +8,7 @@ import {createLogger} from 'redux-logger';
 
 import App from './components/App';
 import Results from './components/Results';
-import Repos from './components/Repos';
+import RepoList from './components/RepoList';
 import RepoPage from './components/RepoPage';
 
 import reducer from './reducers/index';
@@ -21,8 +21,8 @@ ReactDOM.render(
         <Router history={browserHistory}>
             <Route path='/' component={App}>
                 <Route component={Results}>
-                    <IndexRoute component={Repos} />
-                    <Route path='/repos/(:search)' component={Repos} />
+                    <IndexRoute component={RepoList} />
+                    <Route path='/repos/(:search)' component={RepoList} />
                     {/* I can add the rest of the pages here users, code, etc*/}
                     {/*<Route path='/users/(:search)' component={Users} />
                     <Route path='/code/(:search)' component={Code} />*/}

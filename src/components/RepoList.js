@@ -8,7 +8,7 @@ import _ from 'underscore';
 import RepoCard from './RepoCard';
 
 
-class RepoList extends Component {
+export class RepoList extends Component {
   componentDidMount () {
     if(this.props.params.search !== undefined) {
       this.props.getReposByName(this.props.params.search);
@@ -22,7 +22,7 @@ class RepoList extends Component {
   render() {
     return (
       <section className="repo-list col-sm-9">
-        <h3 className="page-title">{this.props.repos.total} Repository results</h3>
+        <h3 className="page-title">{this.props.repos.total ? this.props.repos.total +` Repository results` : `Search for repositories`}</h3>
         { 
           _.map(this.props.repos.byId, (repo, i) => { 
             return (

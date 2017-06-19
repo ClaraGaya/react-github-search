@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Header from './Header';
 
 export default class App extends Component {
+  componentDidMount() {}
   render() {
     return (
       <div>

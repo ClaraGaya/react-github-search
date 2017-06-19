@@ -7,7 +7,7 @@ import { getRepo, getRepoBranches, getRepoCommits, getRepoReadme } from '../acti
 import _ from 'underscore';
 
 
-class RepoPage extends Component {
+export class RepoPage extends Component {
   componentDidMount () {
     this.props.getRepo(this.props.params.owner, this.props.params.repo)
     this.props.getRepoBranches(this.props.params.owner, this.props.params.repo)
