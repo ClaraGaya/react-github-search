@@ -37,7 +37,7 @@ const initialState = {
   },
 };
 
-describe('RepoList: It must render', () => {
+describe('<RepoList /> It must render', () => {
   it('renders without exploding', () => {
     const store = mockStore(initialState)
     mount(
@@ -48,7 +48,7 @@ describe('RepoList: It must render', () => {
   });
 });
 
-describe('Test the output', () => {
+describe('<RepoList /> Test the output', () => {
   let wrapper;
   beforeEach(() => {
     const store = mockStore(initialState)
@@ -59,7 +59,7 @@ describe('Test the output', () => {
     )
   });
 
-  it('renders the RepoCard component', () => {
+  it('<RepoList /> renders the RepoCard component', () => {
     expect(wrapper.find(RepoCard)).to.have.length(1);
   });
 });
