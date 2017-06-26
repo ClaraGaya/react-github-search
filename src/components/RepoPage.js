@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { getRepo, getRepoBranches, getRepoCommits, getRepoReadme } from '../actions/actions.repos';
 
 import _ from 'underscore';
+import {GoInfo, GoRepoForked, GoEye, GoHistory, GoRepo, GoGitBranch, GoTag, GoOrganization} from 'react-icons/lib/go';
 
 
 export class RepoPage extends Component {
@@ -21,13 +22,13 @@ export class RepoPage extends Component {
         <section className="repo-list container">
             <div className="row">
                 <div className="col-sm-8">
-                    <h1><a href={this.props.repo.html_url}><strong>{this.props.repo.full_name}</strong></a></h1>
+                    <h1><GoRepo /><a href={this.props.repo.html_url}><strong>{this.props.repo.full_name}</strong></a></h1>
                 </div>
                 <div className="col-sm-4">
                     <ul className="pagehead-actions">
-                        <li>{this.props.repo.open_issues_count} Open Issues</li>
-                        <li>{this.props.repo.forks_count} Forks</li>
-                        <li>{this.props.repo.watchers} Watchers</li>
+                        <li><GoInfo /> Issues {this.props.repo.open_issues_count}</li>
+                        <li><GoRepoForked /> Forks {this.props.repo.forks_count}</li>
+                        <li><GoEye/> Watch {this.props.repo.watchers}</li>
                     </ul>
                 </div>
             </div>
@@ -38,11 +39,10 @@ export class RepoPage extends Component {
                     <div className="panel panel-default">
                         <div className="panel-body">
                             <ul className="nav nav-justified">
-                                <li>{this.props.commits_count} commits</li>
-                                <li>{this.props.branches_count} branches</li>
-                                <li>{} releases</li>
-                                <li>{} contributors</li>
-                                <li>MIT</li>
+                                <li><GoHistory /> {this.props.commits_count} commits</li>
+                                <li><GoGitBranch /> {this.props.branches_count} branches</li>
+                                <li><GoTag /> {} releases</li>
+                                <li><GoOrganization /> {} contributors</li>
                             </ul>
                         </div>
                     </div> 

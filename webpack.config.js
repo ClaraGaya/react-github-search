@@ -4,7 +4,7 @@ module.exports = {
   context: path.join(__dirname, 'src'),
   entry: './index.js',
   output: {
-    filename: 'src/assets/js/bundle.js',
+    filename: './assets/js/bundle.js',
     path: path.join(__dirname, 'public'),
   },
   devtool: 'eval-source-map',

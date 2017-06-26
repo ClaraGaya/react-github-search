@@ -16,3 +16,8 @@ You can use any frontend framework except jQuery, preferably with React
 ```
 npm start
 ```
+
+### To run this project tests
+```
+npm test
+```
